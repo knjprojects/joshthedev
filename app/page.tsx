@@ -47,6 +47,7 @@ export default function Home() {
               <div className="absolute rounded-[20px] z-[1] bg-white inset-0 opacity-0 group-hver:opacity-20" />
               Contact me
             </Link>
+            <Link href="/blog">Blog</Link>
           </div>
         </div>
       </div>

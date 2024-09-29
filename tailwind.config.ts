@@ -10,6 +10,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes:{
+        "fade-in":{
+          from :{opacity:"0"},
+          to:{opacity:"1"}
+        }
+      },
+      animation:{"fade-in":"fade-in 0.5s linear forwards",},//adding keyframes for our fade-in animation  to set from where it occurs
       fontFamily:{
         //Poppins: ["Poppins", "sans-serif"],
         //merienda: ["Merienda",...defaultTheme.fontFamily.sans],
@@ -36,6 +43,8 @@ const config: Config = {
       
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwindcss-animate")
+  ],
 }
 export default config
